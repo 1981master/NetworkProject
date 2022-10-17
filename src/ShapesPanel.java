@@ -126,6 +126,7 @@ public class ShapesPanel extends JPanel{
 		@Override
 		protected void paintComponent(Graphics g){
 			super.paintComponent(g);
+			//calling draw method.
 			draw(g,0,0,0);
 			
 			
