@@ -1,3 +1,7 @@
+/*
+ * 
+ * 
+ * */
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -13,9 +17,10 @@ import javax.swing.SwingConstants;
 
 public class Shapes {
 	
-	private static JButton button;
+	
 	private static ShapesPanel panel;
 	
+
 	Shapes(){
 		
 	}
@@ -23,6 +28,7 @@ public class Shapes {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.setSize(800,400);
+		frame.setTitle("Network Project HABEEB");
 		frame.setLocationRelativeTo(null);
 	    panel = new ShapesPanel();
 		frame.add(panel);
@@ -49,7 +55,7 @@ public class Shapes {
 		
 		
 		//button
-	    button = new JButton("Start");
+        JButton button = new JButton("Start");
 	    panel.add(button);
 		
 		//button

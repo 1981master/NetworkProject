@@ -64,15 +64,35 @@ public class ShapesPanel extends JPanel{
 		 if(x>=310 && x<=410) {
 				g2d.setColor(new Color(0, 0, 0, 128));
 				g2d.fillRect(40+x, 120, 10, 80);
+				
+				g2d.setColor(Color.GREEN);
+				g2d.fillRect(50+x, 120, 10, 80);
+				
+				g2d.setColor(Color.YELLOW);
+				g2d.fillRect(60+x, 120, 10, 80);
 
 			} if(x>=410 && x<=420) {
 				//g2d.drawRect(460, 135, 30, 50);
 				g2d.fillRect(460, 135, 30, 50);
+				
+//				//g2d.drawRect(460, 135, 30, 50);
+//				g2d.setColor(Color.GREEN);
+//				g2d.fillRect(460, 135, 30, 50);
+				
 			}
 			//rec moving throw the end of the cable.
 			 if(x>=420 && x<=630) {
 				//g2d.drawRect(490,150,25,20);
 				g2d.fillRect(80+x,150,25,20);
+				
+				
+				//g2d.drawRect(490,150,25,20);
+				g2d.setColor(Color.YELLOW);
+				g2d.fillRect(120+x,150,25,20);
+				
+				g2d.setColor(Color.GREEN);
+				g2d.fillRect(160+x,150,25,20);
+				
 			}
 			 
 
@@ -84,7 +104,7 @@ public class ShapesPanel extends JPanel{
 	
 		}
 		
-		
+		//what it takes by the method and what the method return type.
 		protected void draw(Graphics g, int cx, int cy, int cz) {
 			Graphics2D g2d = (Graphics2D) g;
 			g2d.setStroke(new BasicStroke(5));
@@ -128,10 +148,6 @@ public class ShapesPanel extends JPanel{
 			super.paintComponent(g);
 			//calling draw method.
 			draw(g,0,0,0);
-			
-			
-		
-			
 
 		}
 		
